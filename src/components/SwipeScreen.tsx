@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Heart, PartyPopper, SlidersHorizontal, X } from 'lucide-react';
+import { Heart, PartyPopper, RotateCcw, SlidersHorizontal, X } from 'lucide-react';
 import type { Recipe } from '../types';
 import { DAYS, QUOTA } from '../lib/constants';
 import SwipeCard, { CardBody } from './SwipeCard';
@@ -15,11 +15,12 @@ interface Props {
   onCancelTarget: () => void;
   onResetRejected: () => void;
   onGoPlan: () => void;
+  onRestart: () => void;
 }
 
 export default function SwipeScreen({
   deck, filled, targetDay, onLike, onPass,
-  onOpenFilters, onCancelTarget, onResetRejected, onGoPlan,
+  onOpenFilters, onCancelTarget, onResetRejected, onGoPlan, onRestart,
 }: Props) {
   const [exitDir, setExitDir] = useState<1 | -1>(1);
   const top = deck[0];
@@ -47,12 +48,23 @@ export default function SwipeScreen({
             />
           </div>
         </div>
-        <button
-          onClick={onOpenFilters}
-          className="flex items-center gap-1 rounded-full bg-white px-3 py-2 text-sm shadow"
-        >
-          <SlidersHorizontal size={16} /> Filtres
-        </button>
+        <div className="flex items-center gap-2">
+          {filled > 0 && (
+            <button
+              onClick={onRestart}
+              aria-label="Tout recommencer"
+              className="rounded-full bg-white p-2.5 shadow"
+            >
+              <RotateCcw size={16} />
+            </button>
+          )}
+          <button
+            onClick={onOpenFilters}
+            className="flex items-center gap-1 rounded-full bg-white px-3 py-2 text-sm shadow"
+          >
+            <SlidersHorizontal size={16} /> Filtres
+          </button>
+        </div>
       </div>
 
       {targetDay !== null && (
@@ -66,9 +78,14 @@ export default function SwipeScreen({
         <div className="flex flex-1 flex-col items-center justify-center gap-4 text-center">
           <PartyPopper size={48} className="text-amber-600" />
           <p className="text-lg font-bold">Ta semaine est complète !</p>
-          <button onClick={onGoPlan} className="rounded-2xl bg-amber-600 px-6 py-3 font-semibold text-white">
-            Voir le planning
-          </button>
+          <div className="flex flex-col gap-2">
+            <button onClick={onGoPlan} className="rounded-2xl bg-amber-600 px-6 py-3 font-semibold text-white">
+              Voir le planning
+            </button>
+            <button onClick={onRestart} className="flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 font-semibold shadow">
+              <RotateCcw size={16} /> Tout recommencer
+            </button>
+          </div>
         </div>
       ) : !top ? (
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
