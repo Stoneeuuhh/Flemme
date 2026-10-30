@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import type { Difficulty, Settings } from '../types';
 import {
-  DIFFICULTY_LABEL, PRESET_EXCLUSIONS, TIME_OPTIONS,
+  DIFFICULTY_LABEL, PRESET_EXCLUSIONS, SEASON_LABEL, TIME_OPTIONS, getCurrentSeason,
 } from '../lib/constants';
 
 interface Props {
@@ -118,6 +118,22 @@ export default function FilterPanel({ open, onClose, settings, onChange }: Props
                 </button>
               ))}
             </div>
+
+            <h3 className="mb-2 mt-6 text-sm font-semibold text-stone-500">Saison</h3>
+            <button
+              onClick={() => onChange({ ...settings, seasonalOnly: !settings.seasonalOnly })}
+              className={`flex w-full items-center justify-between rounded-2xl border px-4 py-3 text-left transition ${
+                settings.seasonalOnly ? 'border-amber-600 bg-amber-100' : 'border-stone-200 bg-white'
+              }`}
+            >
+              <span>
+                <span className="block font-semibold">Recettes de saison</span>
+                <span className="block text-xs text-stone-500">{SEASON_LABEL[getCurrentSeason()]}</span>
+              </span>
+              <span className={`relative h-6 w-11 rounded-full transition ${settings.seasonalOnly ? 'bg-amber-600' : 'bg-stone-300'}`}>
+                <span className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-all ${settings.seasonalOnly ? 'left-[22px]' : 'left-0.5'}`} />
+              </span>
+            </button>
 
             <button onClick={onClose} className="mt-8 w-full rounded-2xl bg-amber-600 py-3 font-semibold text-white">
               Appliquer
