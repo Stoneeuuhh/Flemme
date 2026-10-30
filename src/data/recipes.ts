@@ -61,7 +61,7 @@ export const RECIPES: Recipe[] = [
       'Faire suer l’oignon et le poivron dans une poêle avec un filet d’huile d’olive pendant 6 à 7 minutes à feu moyen jusqu’à ce qu’ils soient tendres.',
       'Dans un saladier, battre les 4 œufs en omelette avec du sel et du poivre.',
       'Verser les œufs battus directement sur les légumes dans la poêle bien chaude.',
-      'Laisser cuire 3 minutes en ramenant doucement les bords vers le centre, parsemer de fromage râpé, plier en deux et retirer du feu selon la cuisson souhaitée (baveuse ou bien cuite).'
+      'Laisser cuire 3 minutes en ramenant doucement les bords vers le centre, parsemer de fromage râpé, plier en deux et retirer du feu selon la cuisson souhaitée.'
     ]
   },
   {
@@ -80,7 +80,7 @@ export const RECIPES: Recipe[] = [
       'Cuire le quinoa dans deux fois son volume d’eau bouillante salée pendant 12 à 15 minutes, puis égoutter et laisser tiédir.',
       'Couper le concombre en dés, les tomates cerises en deux et trancher l’avocat.',
       'Arroser immédiatement la chair de l’avocat avec la moitié du jus de citron pour éviter qu’elle ne noircisse.',
-      'Dresser le quinoa au fond de deux bols, disposer harmonieusement les légumes, émietter la feta par-dessus et assaisonner d’un filet d’huile d’olive, du reste de jus de citron, de sel et de poivre.'
+      'Dresser le quinoa au fond de deux bols, disposer les légumes, émietter la feta par-dessus et assaisonner d’un filet d’huile d’olive, du reste de jus de citron, de sel et de poivre.'
     ]
   },
   {
@@ -96,9 +96,9 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Couper les blancs de poulet en fines lamelles. Émincer l’oignon et le poivron en fines lanières.',
-      'Dans une poêle bien chaude huilée, faire sauter le poulet 5 minutes à feu vif, puis ajouter les poivrons et l’oignon. Saler et poivrer (ajouter des épices au choix : paprika ou cumin).',
+      'Dans une poêle chaude huilée, faire sauter le poulet 5 minutes à feu vif, puis ajouter les poivrons et l’oignon. Saler et poivrer.',
       'Poursuivre la cuisson 5 minutes jusqu’à ce que le poulet soit doré et les légumes fondants. Ajouter la crème fraîche en fin de cuisson.',
-      'Passer les galettes de tortillas 20 secondes au micro-ondes ou dans une poêle sèche pour les assouplir.',
+      'Passer les tortillas 20 secondes au micro-ondes ou dans une poêle sèche pour les assouplir.',
       'Garnir le centre des tortillas avec la préparation au poulet, saupoudrer de fromage râpé, replier les côtés puis rouler serré.'
     ]
   },
@@ -114,11 +114,11 @@ export const RECIPES: Recipe[] = [
       i('olives', 50, 'g', 'epicerie'),
     ],
     steps: [
-      'Cuire les œufs dans l’eau bouillante pendant 9 minutes pour obtenir des œufs durs, puis les refroidir sous l’eau froide et les écaler.',
-      'Équeuter et cuire les haricots verts à l’eau bouillante salée pendant 8 à 10 minutes (ils doivent rester croquants), puis les passer à l’eau glacée pour préserver leur couleur verte.',
+      'Cuire les œufs dans l’eau bouillante pendant 9 minutes pour obtenir des œufs durs, puis les refroidir à l’eau froide et les écaler.',
+      'Équeuter et cuire les haricots verts à l’eau bouillante salée pendant 8 à 10 minutes, puis les passer sous l’eau glacée pour préserver leur couleur.',
       'Laver et couper les tomates en quartiers.',
       'Égoutter le thon et l’émietter grossièrement à la fourchette.',
-      'Disposer les haricots, les quartiers de tomates, le thon, les olives et les œufs coupés en deux dans un plat. Arroser d’une vinaigrette à l’huile d’olive.'
+      'Disposer les haricots, les tomates, le thon, les olives et les œufs coupés en deux dans un plat. Arroser d’une vinaigrette à l’huile d’olive.'
     ]
   },
   {
@@ -135,9 +135,9 @@ export const RECIPES: Recipe[] = [
     steps: [
       'Cuire le riz dans une casserole d’eau bouillante salée selon le temps indiqué sur l’emballage.',
       'Détailler le brocoli en petits fleuretons et les cuire à la vapeur ou à l’eau bouillante salée pendant 8 minutes.',
-      'Dans une poêle chaude légèrement huilée, déposer les pavés de saumon côté peau. Cuire 4 à 5 minutes sans y toucher pour rendre la peau croustillante.',
+      'Dans une poêle chaude légèrement huilée, déposer les pavés de saumon côté peau. Cuire 4 à 5 minutes sans y toucher pour dorer la peau.',
       'Retourner délicatement les pavés, arroser avec la sauce soja et un trait de jus de citron, puis prolonger la cuisson de 3 minutes à feu modéré.',
-      'Servir le saumon chaud nappé de son jus réduit, accompagné du riz égoutté et des fleuretons de brocoli.'
+      'Servir le saumon chaud nappé de sauce, accompagné du riz égoutté et des fleuretons de brocoli.'
     ]
   },
   {
@@ -153,10 +153,10 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Lancer la cuisson du riz dans de l’eau bouillante salée.',
-      'Nettoyer les champignons et les couper en lamelles. Émincer l’oignon. Couper le poulet en gros morceaux réguliers.',
-      'Faire dorer le poulet dans une poêle chaude avec un peu de matière grasse pendant 5 à 6 minutes. Réserver dans une assiette.',
+      'Nettoyer les champignons et les couper en lamelles. Émincer l’oignon. Couper le poulet en morceaux réguliers.',
+      'Faire dorer le poulet dans une poêle chaude avec un peu d’huile pendant 5 à 6 minutes. Réserver dans une assiette.',
       'Dans la même poêle, faire suer l’oignon puis ajouter les champignons à feu vif jusqu’à évaporation de leur eau.',
-      'Remettre le poulet, verser la crème fraîche, assaisonner de sel et de poivre, et laisser mijoter à feu doux pendant 6 à 8 minutes jusqu’à ce que la sauce nappe la cuillère. Servir avec le riz.'
+      'Remettre le poulet, verser la crème fraîche, assaisonner de sel et de poivre, et laisser mijoter à feu doux pendant 6 à 8 minutes. Servir avec le riz.'
     ]
   },
   {
@@ -173,10 +173,10 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Faire cuire le riz d’accompagnement dans de l’eau bouillante salée.',
-      'Émincer l’oignon et râper les gousses d’ail.',
+      'Émincer l’oignon et hacher les gousses d’ail.',
       'Faire revenir l’oignon dans une sauteuse huilée pendant 3 minutes, ajouter l’ail et le curry en poudre, remuer 30 secondes pour libérer les arômes.',
       'Rincer et égoutter les pois chiches en boîte, puis les ajouter dans la sauteuse.',
-      'Verser les tomates concassées et le lait de coco, saler, poivrer et laisser mijoter à feu doux pendant 15 minutes. Servir bien chaud sur le riz.'
+      'Verser les tomates concassées et le lait de coco, saler, poivrer et laisser mijoter à feu doux pendant 15 minutes. Servir sur le riz.'
     ]
   },
   {
@@ -192,11 +192,12 @@ export const RECIPES: Recipe[] = [
     steps: [
       'Préchauffer le four à 190°C (thermostat 6-7).',
       'Laver les courgettes et les couper en rondelles moyennes.',
-      'Faire précuire les rondelles de courgettes à la poêle avec un filet d’huile pendant 7 à 8 minutes pour leur faire rendre un maximum d’eau.',
+      'Faire précuire les rondelles de courgettes à la poêle avec un filet d’huile pendant 7 à 8 minutes pour leur faire rendre l’eau.',
       'Dans un plat à gratin, alterner une couche de courgettes, des lanières de jambon blanc et un peu de crème fraîche salée et poivrée.',
-      'Recouvrir généreusement de fromage râpé et enfourner pour 20 à 25 minutes jusqu’à ce que le gratin soit bien doré et bouillonnant.'
-    ],
-    {
+      'Recouvrir généreusement de fromage râpé et enfourner pour 20 à 25 minutes jusqu’à ce que le gratin soit bien doré.'
+    ]
+  },
+  {
     id: 'cabillaud-papillote',
     title: 'Cabillaud en papillote',
     prepTime: 30, difficulty: 'moyen', category: 'poisson',
@@ -208,11 +209,11 @@ export const RECIPES: Recipe[] = [
       i('pommes de terre', 300, 'g', 'legumes'),
     ],
     steps: [
-      'Préchauffer le four à 200°C. Cuire les pommes de terre pelées et coupées en morceaux dans l’eau bouillante pendant 15 minutes.',
+      'Préchauffer le four à 200°C. Cuire les pommes de terre coupées en morceaux dans l’eau bouillante pendant 15 minutes.',
       'Détailler la courgette en tagliatelles fines (à l’économe) et couper les tomates cerises en deux.',
       'Sur deux grandes feuilles de papier cuisson, déposer un lit de courgettes et quelques tomates cerises.',
       'Poser un dos de cabillaud au centre de chaque lit, saler, poivrer, ajouter une rondelle de citron et un filet d’huile d’olive.',
-      'Fermer hermétiquement les papillotes en rabattant les bords et enfourner 15 minutes. Servir directement dans la papillote avec les pommes de terre.'
+      'Fermer hermétiquement les papillotes et enfourner 15 minutes. Servir chaud avec les pommes de terre.'
     ]
   },
   {
@@ -229,8 +230,8 @@ export const RECIPES: Recipe[] = [
     steps: [
       'Dissoudre un cube de bouillon de légumes dans 600 ml d’eau très chaude et maintenir au chaud sur feu doux.',
       'Dans une sauteuse avec la moitié du beurre, faire dorer les champignons émincés pendant 5 minutes. Les retirer et réserver.',
-      'Dans la même sauteuse, faire suer l’oignon finement émincé, puis ajouter le riz arborio sec. Mélanger 2 minutes jusqu’à ce que les grains deviennent translucides.',
-      'Verser une louche de bouillon chaud. Attendre l’absorption complète en remuant régulièrement avant d’ajouter la louche suivante. Répéter l’opération pendant environ 18 minutes.',
+      'Dans la même sauteuse, faire suer l’oignon émincé, puis ajouter le riz arborio sec. Remuer 2 minutes jusqu’à ce qu’il devienne translucide.',
+      'Verser une louche de bouillon chaud. Laisser absorber en remuant avant d’ajouter la louche suivante. Répéter l’opération pendant 18 minutes.',
       'Quand le riz est cuit et crémeux, incorporer les champignons, le reste du beurre et le parmesan râpé hors du feu. Couvrir 2 minutes avant de servir.'
     ]
   },
@@ -249,10 +250,10 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Préparer la bolognaise : faire revenir l’oignon et l’ail hachés, ajouter le bœuf haché et cuire 5 minutes. Verser les tomates concassées, saler, poivrer et laisser mijoter 15 minutes.',
-      'Préparer la béchamel : faire fondre le beurre dans une casserole, ajouter la farine en fouettant pendant 1 minute, puis verser le lait petit à petit en fouettant continuellement à feu moyen jusqu’à épaississement.',
+      'Préparer la béchamel : faire fondre le beurre dans une casserole, ajouter la farine en remuant pendant 1 minute, puis verser le lait petit à petit en fouettant à feu moyen jusqu’à épaississement.',
       'Préchauffer le four à 180°C.',
-      'Dans un plat à gratin, napper le fond d’une fine couche de béchamel, disposer une couche de pâte, de la bolognaise, de la béchamel et un peu de fromage. Répéter sur 3 étages.',
-      'Terminer par une généreuse couche de béchamel et le restant de fromage râpé. Enfourner 30 minutes jusqu’à ce que le dessus soit gratiné.'
+      'Dans un plat à gratin, napper le fond de béchamel, déposer des plaques de pâte, de la bolognaise, de la béchamel et un peu de fromage. Répéter sur 3 étages.',
+      'Terminer par une couche de béchamel et le fromage râpé. Enfourner 30 minutes jusqu’à ce que le dessus soit gratiné.'
     ]
   },
   {
@@ -267,11 +268,11 @@ export const RECIPES: Recipe[] = [
       i('pommes de terre', 400, 'g', 'legumes'), i('ail', 2, 'gousses', 'legumes'),
     ],
     steps: [
-      'Couper la viande de bœuf en cubes réguliers de taille moyenne. Émincer les oignons et couper les carottes en rondelles épaisses.',
-      'Dans une cocotte avec un peu d’huile, saisir les morceaux de viande à feu très vif pour bien les dorer sur toutes les faces. Saler et poivrer.',
-      'Ajouter les oignons et les gousses d’ail écrasées, laisser suer 3 minutes, puis saupoudrer d’une cuillère à soupe de farine et bien mélanger.',
-      'Mouiller avec le vin rouge et ajouter un demi-verre d’eau pour couvrir la viande. Ajouter les rondelles de carottes.',
-      'Couvrir et laisser mijoter à feu très doux au moins 45 minutes (ou plus si possible). Cuire les pommes de terre à l’eau à part et servir en accompagnement.'
+      'Couper la viande de bœuf en cubes moyens. Émincer les oignons et couper les carottes en rondelles.',
+      'Dans une cocotte avec un peu d’huile, saisir les morceaux de viande à feu très vif pour bien les dorer. Saler et poivrer.',
+      'Ajouter les oignons et les gousses d’ail écrasées, laisser suer 3 minutes, puis saupoudrer d’une cuillère à soupe de farine et mélanger.',
+      'Mouiller avec le vin rouge et un demi-verre d’eau pour couvrir la viande. Ajouter les rondelles de carottes.',
+      'Couvrir et laisser mijoter à feu doux au moins 45 minutes. Cuire les pommes de terre à l’eau à part pour accompagner.'
     ]
   },
   {
@@ -286,13 +287,13 @@ export const RECIPES: Recipe[] = [
       i('crème fraîche', 100, 'ml', 'frais'),
     ],
     steps: [
-      'Laver soigneusement le potimarron (inutile de l’éplucher, sa peau s’adoucit à la cuisson), retirer les graines et le couper en cubes. Peler et couper les pommes de terre en morceaux.',
-      'Dans une grande marmite, faire revenir l’oignon émincé dans un peu de matière grasse pendant 3 minutes.',
-      'Ajouter les cubes de potimarron et de pommes de terre, puis verser le bouillon de légumes chaud jusqu’à hauteur des légumes.',
-      'Porter à ébullition, couvrir et laisser cuire 20 minutes à feu moyen jusqu’à ce que la chair soit très tendre sous la pointe d’un couteau.',
-      'Mixer finement à l’aide d’un mixeur plongeant en incorporant la crème fraîche. Rectifier l’assaisonnement en sel et poivre.'
+      'Laver le potimarron (la peau se mange), retirer les graines et le couper en cubes. Peler et couper les pommes de terre en morceaux.',
+      'Dans une marmite, faire revenir l’oignon émincé dans un peu d’huile pendant 3 minutes.',
+      'Ajouter les cubes de potimarron et de pommes de terre, puis verser le bouillon de légumes chaud jusqu’à hauteur.',
+      'Porter à ébullition, couvrir et laisser cuire 20 minutes à feu moyen jusqu’à ce que les légumes soient tendres.',
+      'Mixer finement au mixeur plongeant en incorporant la crème fraîche. Assaisonner de sel et de poivre.'
     ],
-    tip: 'Inutile d’éplucher le potimarron : sa peau cuit très bien et donne une couleur orange encore plus intense.'
+    tip: 'Inutile d’éplucher le potimarron : sa peau devient très tendre après cuisson.'
   },
   {
     id: 'tartiflette',
@@ -306,11 +307,11 @@ export const RECIPES: Recipe[] = [
       i('crème fraîche', 100, 'ml', 'frais'),
     ],
     steps: [
-      'Cuire les pommes de terre entières avec la peau dans une grande casserole d’eau bouillante salée pendant 20 minutes. Les laisser tiédir, les peler et les couper en rondelles.',
+      'Cuire les pommes de terre entières avec la peau à l’eau bouillante salée pendant 20 minutes. Les peler et les couper en rondelles.',
       'Préchauffer le four à 200°C.',
-      'Dans une poêle, faire dorer les lardons avec l’oignon émincé pendant environ 6 minutes. Égoutter le trop-plein de matière grasse.',
-      'Dans un plat à gratin, mélanger les rondelles de pommes de terre, les oignons, les lardons et la crème fraîche. Poivrer (le sel des lardons suffit généralement).',
-      'Couper le reblochon en deux dans l’épaisseur et le déposer sur le dessus du plat, croûte vers le haut. Enfourner pour 20 minutes jusqu’à ce que le fromage soit totalement fondu et gratiné.'
+      'Dans une poêle, faire dorer les lardons avec l’oignon émincé pendant 6 minutes. Égoutter l’excédent de graisse.',
+      'Dans un plat à gratin, mélanger les pommes de terre, les oignons, les lardons et la crème fraîche. Poivrer.',
+      'Couper le reblochon en deux dans l’épaisseur et le déposer sur le dessus, croûte vers le haut. Enfourner 20 minutes jusqu’à ce qu’il soit fondu et doré.'
     ]
   },
   {
@@ -324,11 +325,11 @@ export const RECIPES: Recipe[] = [
       i('bouillon de légumes', 600, 'ml', 'epicerie'), i('crème fraîche', 50, 'ml', 'frais'),
     ],
     steps: [
-      'Nettoyer soigneusement les poireaux pour ôter toute trace de terre et les émincer en rondelles. Éplucher les pommes de terre et les couper en dés.',
-      'Faire fondre une noisette de beurre ou d’huile dans un faitout et y faire suer les blancs et verts de poireaux pendant 5 minutes sans coloration.',
+      'Nettoyer les poireaux et les émincer en rondelles. Éplucher les pommes de terre et les couper en dés.',
+      'Faire fondre une noisette de matière grasse dans un faitout et faire suer les poireaux pendant 5 minutes sans coloration.',
       'Ajouter les dés de pommes de terre et mouiller avec le bouillon de légumes chaud.',
-      'Couvrir et laisser mijoter à petits bouillons pendant 20 minutes.',
-      'Mixer jusqu’à obtention d’une texture lisse et veloutée. Incorporer la crème fraîche, assaisonner de poivre et servir bien chaud.'
+      'Couvrir et laisser mijoter pendant 20 minutes à feu moyen.',
+      'Mixer jusqu’à obtenir une texture lisse. Incorporer la crème fraîche, assaisonner de poivre et servir bien chaud.'
     ]
   },
   {
@@ -343,11 +344,11 @@ export const RECIPES: Recipe[] = [
       i('huile d\'olive', 3, 'c. à s.', 'epicerie'),
     ],
     steps: [
-      'Laver les légumes. Couper les tomates en gros morceaux. Peler le concombre et le tronçonner. Épépiner le poivron et le tailler grossièrement.',
-      'Déposer tous les légumes dans le bol d’un blender avec la gousse d’ail dégermée.',
-      'Ajouter l’huile d’olive, une pincée de sel, un tour de moulin à poivre (et un trait de vinaigre de xérès si disponible).',
-      'Mixer à puissance maximale pendant 2 minutes jusqu’à l’obtention d’un liquide parfaitement homogène.',
-      'Placer au réfrigérateur pendant au moins 1 heure pour servir très frais.'
+      'Laver les légumes. Couper les tomates en morceaux. Peler le concombre et le tronçonner. Épépiner le poivron et le couper grossièrement.',
+      'Déposer tous les légumes dans le bol d’un blender avec la gousse d’ail.',
+      'Ajouter l’huile d’olive, du sel et un tour de moulin à poivre.',
+      'Mixer à pleine vitesse pendant 2 minutes jusqu’à obtenir un mélange fluide et homogène.',
+      'Placer au frais au moins 1 heure avant de déguster bien frais.'
     ]
   },
   {
@@ -363,11 +364,11 @@ export const RECIPES: Recipe[] = [
       i('riz', 150, 'g', 'epicerie'),
     ],
     steps: [
-      'Couper tous les légumes (courgettes, aubergine, poivron, tomates) en dés de taille régulière. Émincer l’oignon et hacher l’ail.',
-      'Dans une grande sauteuse avec de l’huile d’olive, faire revenir d’abord les aubergines et les poivrons pendant 7 à 8 minutes.',
+      'Couper tous les légumes en dés réguliers. Émincer l’oignon et hacher l’ail.',
+      'Dans une sauteuse avec de l’huile d’olive, faire revenir les aubergines et les poivrons pendant 7 à 8 minutes.',
       'Ajouter les courgettes, l’oignon et l’ail. Poursuivre la cuisson 5 minutes.',
-      'Ajouter enfin les tomates, saler, poivrer et laisser compoter à feu doux et à couvert pendant 25 minutes en remuant régulièrement.',
-      'Pendant ce temps, cuire le riz dans l’eau bouillante salée et le servir en lit sous la ratatouille fondante.'
+      'Ajouter les tomates, saler, poivrer et laisser mijoter à couvert à feu doux pendant 25 minutes en remuant régulièrement.',
+      'Cuire le riz à l’eau bouillante salée et le servir en accompagnement de la ratatouille.'
     ]
   },
   {
@@ -382,11 +383,11 @@ export const RECIPES: Recipe[] = [
       i('olives', 50, 'g', 'epicerie'),
     ],
     steps: [
-      'Cuire les pâtes dans l’eau bouillante salée en les gardant bien fermes. Les égoutter puis les passer sous l’eau très froide pour stopper la cuisson et les refroidir.',
-      'Couper les tomates cerises en deux et égoutter la boule de mozzarella avant de la découper en petits dés.',
-      'Dans un grand saladier, réunir les pâtes refroidies, les dés de mozzarella, les tomates cerises et les olives.',
-      'Ciseler généreusement le basilic frais sur le dessus.',
-      'Arroser d’un bon filet d’huile d’olive, saler, poivrer et mélanger délicatement avant de réserver au frais.'
+      'Cuire les pâtes al dente. Les égoutter puis les rincer abondamment à l’eau froide pour stopper la cuisson.',
+      'Couper les tomates cerises en deux et couper la mozzarella en petits dés.',
+      'Dans un saladier, mélanger les pâtes froides, la mozzarella, les tomates cerises et les olives.',
+      'Ajouter le basilic frais ciselé.',
+      'Arroser d’un filet d’huile d’olive, saler, poivrer et réserver au frais avant de servir.'
     ]
   },
   {
@@ -400,11 +401,11 @@ export const RECIPES: Recipe[] = [
       i('parmesan', 30, 'g', 'frais'), i('citron', 1, '', 'legumes'),
     ],
     steps: [
-      'Casser le bout fibreux des asperges vertes. Les faire cuire dans une eau bouillante salée pendant 6 à 8 minutes (la pointe d’un couteau doit s’enfoncer facilement tout en gardant une légère tenue).',
-      'Plonger les 4 œufs dans l’eau bouillante pendant 6 minutes précises pour obtenir des œufs mollets au cœur coulant, puis les plonger aussitôt dans de l’eau très froide avant de les écaler avec précaution.',
-      'Égoutter les asperges et les disposer tièdes sur les assiettes.',
-      'Poser délicatement deux œufs mollets par assiette et les fendre légèrement au couteau.',
-      'Saupoudrer de copeaux de parmesan, assaisonner de fleur de sel, de poivre du moulin et d’un filet de jus de citron.'
+      'Casser le bout dur des asperges vertes. Les cuire dans une eau bouillante salée pendant 6 à 8 minutes jusqu’à ce qu’elles soient tendres mais encore fermes.',
+      'Plonger les œufs dans l’eau bouillante pendant 6 minutes précises pour un résultat mollet, puis les plonger aussitôt dans de l’eau glacée avant de les écaler.',
+      'Égoutter les asperges et les dresser sur les assiettes.',
+      'Déposer délicatement les œufs mollets et les ouvrir en deux.',
+      'Parsemer de copeaux de parmesan, ajouter un tour de moulin à poivre, un peu de fleur de sel et un trait de jus de citron.'
     ]
   },
   {
@@ -419,10 +420,10 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Cuire le riz dans une casserole d’eau bouillante salée selon le temps indiqué.',
-      'Dans une sauteuse, faire dorer les lardons à sec avec l’oignon émincé pendant 5 minutes.',
-      'Ajouter les petits pois (frais ou surgelés) et mélanger.',
-      'Verser un demi-verre d’eau, couvrir et laisser mijoter à feu doux pendant 10 à 12 minutes jusqu’à ce que les petits pois soient fondants.',
-      'Égoutter le riz et le mélanger directement dans la sauteuse avec les petits pois et les lardons, rectifier le poivre et servir chaud.'
+      'Dans une sauteuse sans matière grasse, faire dorer les lardons avec l’oignon émincé pendant 5 minutes.',
+      'Ajouter les petits pois et mélanger.',
+      'Verser un demi-verre d’eau, couvrir et laisser mijoter à feu doux pendant 10 à 12 minutes.',
+      'Égoutter le riz et l’incorporer directement dans la sauteuse, poivrer et servir bien chaud.'
     ]
   },
 ];
