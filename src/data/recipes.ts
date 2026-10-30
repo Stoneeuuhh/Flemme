@@ -1,4 +1,5 @@
 import type { Aisle, Ingredient, Recipe, Season } from '../types';
+import { MEALDB_RECIPES } from './mealdbRecipes';
 
 const i = (name: string, amount: number, unit: string, aisle: Aisle): Ingredient => ({
   name, amount, unit, aisle,
@@ -6,7 +7,7 @@ const i = (name: string, amount: number, unit: string, aisle: Aisle): Ingredient
 const img = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=70`;
 const ALL: Season[] = ['printemps', 'ete', 'automne', 'hiver'];
 
-export const RECIPES: Recipe[] = [
+const BASE_RECIPES: Recipe[] = [
   {
     id: 'pates-tomate-basilic',
     title: 'Pâtes tomate & basilic',
@@ -426,4 +427,9 @@ export const RECIPES: Recipe[] = [
       'Égoutter le riz et l’incorporer directement dans la sauteuse, poivrer et servir bien chaud.'
     ]
   },
+];
+
+export const RECIPES: Recipe[] = [
+  ...BASE_RECIPES,
+  ...MEALDB_RECIPES,
 ];
