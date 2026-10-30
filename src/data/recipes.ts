@@ -191,4 +191,8 @@ export const RECIPES: Recipe[] = [
     ],
     steps: [
       'Préchauffer le four à 190°C (thermostat 6-7).',
-      'Laver les courgettes et
+      'Laver les courgettes et les couper en rondelles moyennes.',
+      'Faire précuire les rondelles de courgettes à la poêle avec un filet d’huile pendant 7 à 8 minutes pour leur faire rendre un maximum d’eau.',
+      'Dans un plat à gratin, alterner une couche de courgettes, des lanières de jambon blanc et un peu de crème fraîche salée et poivrée.',
+      'Recouvrir généreusement de fromage râpé et enfourner pour 20 à 25 minutes jusqu’à ce que le gratin soit bien doré et bouillonnant.'
+    ],
