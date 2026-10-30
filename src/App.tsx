@@ -86,6 +86,10 @@ export default function App() {
     setTab('swipe');
   };
 
+   const restartWeek = () => {
+    if (confirm('Tout recommencer ? Le planning actuel sera effacé.')) resetWeek();
+  };
+
   const toggleChecked = (key: string) =>
     setChecked((prev) => (prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]));
 
@@ -109,6 +113,7 @@ export default function App() {
             onCancelTarget={() => setTargetDay(null)}
             onResetRejected={() => setRejected([])}
             onGoPlan={() => setTab('plan')}
+            onRestart={restartWeek}
           />
         )}
         {tab === 'plan' && (
