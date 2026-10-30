@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { ArrowDown, ArrowUp, Clock, Plus, RefreshCw, RotateCcw, Trash2 } from 'lucide-react';
 import type { Recipe } from '../types';
 import { DAYS, DIFFICULTY_LABEL, DIFFICULTY_STYLE } from '../lib/constants';
+import { RecipeModal } from './RecipeModal';
 
 interface Props {
   plan: (Recipe | null)[];
@@ -11,13 +13,16 @@ interface Props {
 }
 
 export default function Planning({ plan, onSwap, onReplace, onRemove, onReset }: Props) {
+  // Le hook useState doit être à l'intérieur du composant
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+
   return (
     <div className="px-4 pb-6 pt-4">
       <div className="mb-4 flex items-center justify-between">
         <h1 className="text-xl font-bold">Ma semaine</h1>
         <button
           onClick={() => confirm('Recommencer une nouvelle semaine ?') && onReset()}
-          className="flex items-center gap-1 text-sm text-stone-500"
+          className="flex items-center gap-1 text-sm text-stone-500 hover:text-stone-700"
         >
           <RotateCcw size={14} /> Nouvelle semaine
         </button>
@@ -30,20 +35,28 @@ export default function Planning({ plan, onSwap, onReplace, onRemove, onReset }:
 
             {recipe ? (
               <div className="flex items-center gap-3">
-                <img
-                  src={recipe.image} alt="" draggable={false}
-                  onError={(e) => ((e.currentTarget.style.visibility = 'hidden'))}
-                  className="h-14 w-14 shrink-0 rounded-xl bg-amber-100 object-cover"
-                />
-                <div className="min-w-0 flex-1">
-                  <p className="truncate font-semibold">{recipe.title}</p>
-                  <div className="mt-1 flex items-center gap-2 text-xs text-stone-500">
-                    <span className="flex items-center gap-1"><Clock size={12} />{recipe.prepTime} min</span>
-                    <span className={`rounded-full px-2 py-0.5 font-medium ${DIFFICULTY_STYLE[recipe.difficulty]}`}>
-                      {DIFFICULTY_LABEL[recipe.difficulty]}
-                    </span>
+                {/* Zone cliquable pour ouvrir la fiche recette détaillée */}
+                <div 
+                  onClick={() => setSelectedRecipe(recipe)} 
+                  className="flex min-w-0 flex-1 cursor-pointer items-center gap-3 transition-opacity active:opacity-75"
+                >
+                  <img
+                    src={recipe.image} alt="" draggable={false}
+                    onError={(e) => ((e.currentTarget.style.visibility = 'hidden'))}
+                    className="h-14 w-14 shrink-0 rounded-xl bg-amber-100 object-cover"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate font-semibold">{recipe.title}</p>
+                    <div className="mt-1 flex items-center gap-2 text-xs text-stone-500">
+                      <span className="flex items-center gap-1"><Clock size={12} />{recipe.prepTime} min</span>
+                      <span className={`rounded-full px-2 py-0.5 font-medium ${DIFFICULTY_STYLE[recipe.difficulty]}`}>
+                        {DIFFICULTY_LABEL[recipe.difficulty]}
+                      </span>
+                    </div>
                   </div>
                 </div>
+
+                {/* Boutons d'ordonnancement */}
                 <div className="flex flex-col items-center gap-1 text-stone-500">
                   <button disabled={day === 0} onClick={() => onSwap(day, day - 1)} aria-label="Monter" className="disabled:opacity-25">
                     <ArrowUp size={18} />
@@ -52,6 +65,8 @@ export default function Planning({ plan, onSwap, onReplace, onRemove, onReset }:
                     <ArrowDown size={18} />
                   </button>
                 </div>
+
+                {/* Actions de remplacement / suppression */}
                 <div className="flex flex-col items-center gap-2">
                   <button onClick={() => onReplace(day)} aria-label="Remplacer" className="text-amber-700">
                     <RefreshCw size={18} />
@@ -72,6 +87,12 @@ export default function Planning({ plan, onSwap, onReplace, onRemove, onReset }:
           </li>
         ))}
       </ol>
+
+      {/* Modale d'affichage de la recette */}
+      <RecipeModal 
+        recipe={selectedRecipe} 
+        onClose={() => setSelectedRecipe(null)} 
+      />
     </div>
   );
 }
