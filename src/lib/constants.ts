@@ -1,4 +1,4 @@
-import type { Aisle, Difficulty, Settings } from '../types';
+import type { Aisle, Difficulty, Season, Settings } from '../types';
 
 export const QUOTA = 7;
 export const DAYS = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
@@ -36,4 +36,21 @@ export const DEFAULT_SETTINGS: Settings = {
   excluded: [],
   difficulties: ['facile', 'moyen', 'avance'],
   maxTime: null,
+  seasonalOnly: false,
 };
+
+
+export const SEASON_LABEL: Record<Season, string> = {
+  printemps: '🌱 Printemps',
+  ete: '☀️ Été',
+  automne: '🍂 Automne',
+  hiver: '❄️ Hiver',
+};
+
+export function getCurrentSeason(date: Date = new Date()): Season {
+  const m = date.getMonth(); // 0 = janvier
+  if (m >= 2 && m <= 4) return 'printemps';
+  if (m >= 5 && m <= 7) return 'ete';
+  if (m >= 8 && m <= 10) return 'automne';
+  return 'hiver';
+}
