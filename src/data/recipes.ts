@@ -196,3 +196,233 @@ export const RECIPES: Recipe[] = [
       'Dans un plat à gratin, alterner une couche de courgettes, des lanières de jambon blanc et un peu de crème fraîche salée et poivrée.',
       'Recouvrir généreusement de fromage râpé et enfourner pour 20 à 25 minutes jusqu’à ce que le gratin soit bien doré et bouillonnant.'
     ],
+    {
+    id: 'cabillaud-papillote',
+    title: 'Cabillaud en papillote',
+    prepTime: 30, difficulty: 'moyen', category: 'poisson',
+    seasons: ['ete'],
+    image: img('photo-1432139555190-58524dae6a55'),
+    ingredients: [
+      i('dos de cabillaud', 2, '', 'viandes'), i('courgettes', 300, 'g', 'legumes'),
+      i('tomates cerises', 150, 'g', 'legumes'), i('citron', 1, '', 'legumes'),
+      i('pommes de terre', 300, 'g', 'legumes'),
+    ],
+    steps: [
+      'Préchauffer le four à 200°C. Cuire les pommes de terre pelées et coupées en morceaux dans l’eau bouillante pendant 15 minutes.',
+      'Détailler la courgette en tagliatelles fines (à l’économe) et couper les tomates cerises en deux.',
+      'Sur deux grandes feuilles de papier cuisson, déposer un lit de courgettes et quelques tomates cerises.',
+      'Poser un dos de cabillaud au centre de chaque lit, saler, poivrer, ajouter une rondelle de citron et un filet d’huile d’olive.',
+      'Fermer hermétiquement les papillotes en rabattant les bords et enfourner 15 minutes. Servir directement dans la papillote avec les pommes de terre.'
+    ]
+  },
+  {
+    id: 'risotto-champignons',
+    title: 'Risotto aux champignons',
+    prepTime: 45, difficulty: 'avance', category: 'vege',
+    seasons: ['automne', 'hiver'],
+    image: img('photo-1565299624946-b28f40a0ae38'),
+    ingredients: [
+      i('riz arborio', 180, 'g', 'epicerie'), i('champignons', 300, 'g', 'legumes'),
+      i('oignon', 1, '', 'legumes'), i('bouillon de légumes', 600, 'ml', 'epicerie'),
+      i('parmesan', 50, 'g', 'frais'), i('beurre', 20, 'g', 'frais'),
+    ],
+    steps: [
+      'Dissoudre un cube de bouillon de légumes dans 600 ml d’eau très chaude et maintenir au chaud sur feu doux.',
+      'Dans une sauteuse avec la moitié du beurre, faire dorer les champignons émincés pendant 5 minutes. Les retirer et réserver.',
+      'Dans la même sauteuse, faire suer l’oignon finement émincé, puis ajouter le riz arborio sec. Mélanger 2 minutes jusqu’à ce que les grains deviennent translucides.',
+      'Verser une louche de bouillon chaud. Attendre l’absorption complète en remuant régulièrement avant d’ajouter la louche suivante. Répéter l’opération pendant environ 18 minutes.',
+      'Quand le riz est cuit et crémeux, incorporer les champignons, le reste du beurre et le parmesan râpé hors du feu. Couvrir 2 minutes avant de servir.'
+    ]
+  },
+  {
+    id: 'lasagnes-maison',
+    title: 'Lasagnes maison',
+    prepTime: 60, difficulty: 'avance', category: 'viande',
+    seasons: ALL,
+    image: img('photo-1473093295043-cdd812d0e601'),
+    ingredients: [
+      i('feuilles de lasagne', 250, 'g', 'epicerie'), i('bœuf haché', 300, 'g', 'viandes'),
+      i('tomates concassées', 400, 'g', 'epicerie'), i('oignon', 1, '', 'legumes'),
+      i('ail', 2, 'gousses', 'legumes'), i('lait', 500, 'ml', 'frais'),
+      i('fromage râpé', 100, 'g', 'frais'), i('beurre', 40, 'g', 'frais'),
+      i('farine', 40, 'g', 'epicerie'),
+    ],
+    steps: [
+      'Préparer la bolognaise : faire revenir l’oignon et l’ail hachés, ajouter le bœuf haché et cuire 5 minutes. Verser les tomates concassées, saler, poivrer et laisser mijoter 15 minutes.',
+      'Préparer la béchamel : faire fondre le beurre dans une casserole, ajouter la farine en fouettant pendant 1 minute, puis verser le lait petit à petit en fouettant continuellement à feu moyen jusqu’à épaississement.',
+      'Préchauffer le four à 180°C.',
+      'Dans un plat à gratin, napper le fond d’une fine couche de béchamel, disposer une couche de pâte, de la bolognaise, de la béchamel et un peu de fromage. Répéter sur 3 étages.',
+      'Terminer par une généreuse couche de béchamel et le restant de fromage râpé. Enfourner 30 minutes jusqu’à ce que le dessus soit gratiné.'
+    ]
+  },
+  {
+    id: 'boeuf-bourguignon',
+    title: 'Bœuf bourguignon',
+    prepTime: 60, difficulty: 'avance', category: 'viande',
+    seasons: ['automne', 'hiver'],
+    image: img('photo-1504674900247-0877df9cc836'),
+    ingredients: [
+      i('bœuf à braiser', 400, 'g', 'viandes'), i('carottes', 300, 'g', 'legumes'),
+      i('oignon', 2, '', 'legumes'), i('vin rouge', 200, 'ml', 'epicerie'),
+      i('pommes de terre', 400, 'g', 'legumes'), i('ail', 2, 'gousses', 'legumes'),
+    ],
+    steps: [
+      'Couper la viande de bœuf en cubes réguliers de taille moyenne. Émincer les oignons et couper les carottes en rondelles épaisses.',
+      'Dans une cocotte avec un peu d’huile, saisir les morceaux de viande à feu très vif pour bien les dorer sur toutes les faces. Saler et poivrer.',
+      'Ajouter les oignons et les gousses d’ail écrasées, laisser suer 3 minutes, puis saupoudrer d’une cuillère à soupe de farine et bien mélanger.',
+      'Mouiller avec le vin rouge et ajouter un demi-verre d’eau pour couvrir la viande. Ajouter les rondelles de carottes.',
+      'Couvrir et laisser mijoter à feu très doux au moins 45 minutes (ou plus si possible). Cuire les pommes de terre à l’eau à part et servir en accompagnement.'
+    ]
+  },
+  {
+    id: 'veloute-potimarron',
+    title: 'Velouté de potimarron',
+    prepTime: 30, difficulty: 'moyen', category: 'vege',
+    seasons: ['automne', 'hiver'],
+    image: img('photo-1476224203421-9ac39bcb3327'),
+    ingredients: [
+      i('potimarron', 600, 'g', 'legumes'), i('pommes de terre', 200, 'g', 'legumes'),
+      i('oignon', 1, '', 'legumes'), i('bouillon de légumes', 500, 'ml', 'epicerie'),
+      i('crème fraîche', 100, 'ml', 'frais'),
+    ],
+    steps: [
+      'Laver soigneusement le potimarron (inutile de l’éplucher, sa peau s’adoucit à la cuisson), retirer les graines et le couper en cubes. Peler et couper les pommes de terre en morceaux.',
+      'Dans une grande marmite, faire revenir l’oignon émincé dans un peu de matière grasse pendant 3 minutes.',
+      'Ajouter les cubes de potimarron et de pommes de terre, puis verser le bouillon de légumes chaud jusqu’à hauteur des légumes.',
+      'Porter à ébullition, couvrir et laisser cuire 20 minutes à feu moyen jusqu’à ce que la chair soit très tendre sous la pointe d’un couteau.',
+      'Mixer finement à l’aide d’un mixeur plongeant en incorporant la crème fraîche. Rectifier l’assaisonnement en sel et poivre.'
+    ],
+    tip: 'Inutile d’éplucher le potimarron : sa peau cuit très bien et donne une couleur orange encore plus intense.'
+  },
+  {
+    id: 'tartiflette',
+    title: 'Tartiflette',
+    prepTime: 50, difficulty: 'moyen', category: 'viande',
+    seasons: ['automne', 'hiver'],
+    image: img('photo-1546069901-ba9599a7e63c'),
+    ingredients: [
+      i('pommes de terre', 600, 'g', 'legumes'), i('reblochon', 250, 'g', 'frais'),
+      i('lardons', 150, 'g', 'viandes'), i('oignon', 1, '', 'legumes'),
+      i('crème fraîche', 100, 'ml', 'frais'),
+    ],
+    steps: [
+      'Cuire les pommes de terre entières avec la peau dans une grande casserole d’eau bouillante salée pendant 20 minutes. Les laisser tiédir, les peler et les couper en rondelles.',
+      'Préchauffer le four à 200°C.',
+      'Dans une poêle, faire dorer les lardons avec l’oignon émincé pendant environ 6 minutes. Égoutter le trop-plein de matière grasse.',
+      'Dans un plat à gratin, mélanger les rondelles de pommes de terre, les oignons, les lardons et la crème fraîche. Poivrer (le sel des lardons suffit généralement).',
+      'Couper le reblochon en deux dans l’épaisseur et le déposer sur le dessus du plat, croûte vers le haut. Enfourner pour 20 minutes jusqu’à ce que le fromage soit totalement fondu et gratiné.'
+    ]
+  },
+  {
+    id: 'soupe-poireaux',
+    title: 'Soupe poireaux & pommes de terre',
+    prepTime: 30, difficulty: 'facile', category: 'vege',
+    seasons: ['automne', 'hiver'],
+    image: img('photo-1476224203421-9ac39bcb3327'),
+    ingredients: [
+      i('poireaux', 400, 'g', 'legumes'), i('pommes de terre', 300, 'g', 'legumes'),
+      i('bouillon de légumes', 600, 'ml', 'epicerie'), i('crème fraîche', 50, 'ml', 'frais'),
+    ],
+    steps: [
+      'Nettoyer soigneusement les poireaux pour ôter toute trace de terre et les émincer en rondelles. Éplucher les pommes de terre et les couper en dés.',
+      'Faire fondre une noisette de beurre ou d’huile dans un faitout et y faire suer les blancs et verts de poireaux pendant 5 minutes sans coloration.',
+      'Ajouter les dés de pommes de terre et mouiller avec le bouillon de légumes chaud.',
+      'Couvrir et laisser mijoter à petits bouillons pendant 20 minutes.',
+      'Mixer jusqu’à obtention d’une texture lisse et veloutée. Incorporer la crème fraîche, assaisonner de poivre et servir bien chaud.'
+    ]
+  },
+  {
+    id: 'gaspacho',
+    title: 'Gaspacho tomate & concombre',
+    prepTime: 15, difficulty: 'facile', category: 'vege',
+    seasons: ['ete'],
+    image: img('photo-1540189549336-e6e99c3679fe'),
+    ingredients: [
+      i('tomates', 600, 'g', 'legumes'), i('concombre', 1, '', 'legumes'),
+      i('poivron', 1, '', 'legumes'), i('ail', 1, 'gousses', 'legumes'),
+      i('huile d\'olive', 3, 'c. à s.', 'epicerie'),
+    ],
+    steps: [
+      'Laver les légumes. Couper les tomates en gros morceaux. Peler le concombre et le tronçonner. Épépiner le poivron et le tailler grossièrement.',
+      'Déposer tous les légumes dans le bol d’un blender avec la gousse d’ail dégermée.',
+      'Ajouter l’huile d’olive, une pincée de sel, un tour de moulin à poivre (et un trait de vinaigre de xérès si disponible).',
+      'Mixer à puissance maximale pendant 2 minutes jusqu’à l’obtention d’un liquide parfaitement homogène.',
+      'Placer au réfrigérateur pendant au moins 1 heure pour servir très frais.'
+    ]
+  },
+  {
+    id: 'ratatouille',
+    title: 'Ratatouille & riz',
+    prepTime: 45, difficulty: 'moyen', category: 'vege',
+    seasons: ['ete'],
+    image: img('photo-1512621776951-a57141f2eefd'),
+    ingredients: [
+      i('courgettes', 300, 'g', 'legumes'), i('aubergine', 1, '', 'legumes'),
+      i('poivron', 1, '', 'legumes'), i('tomates', 400, 'g', 'legumes'),
+      i('oignon', 1, '', 'legumes'), i('ail', 2, 'gousses', 'legumes'),
+      i('riz', 150, 'g', 'epicerie'),
+    ],
+    steps: [
+      'Couper tous les légumes (courgettes, aubergine, poivron, tomates) en dés de taille régulière. Émincer l’oignon et hacher l’ail.',
+      'Dans une grande sauteuse avec de l’huile d’olive, faire revenir d’abord les aubergines et les poivrons pendant 7 à 8 minutes.',
+      'Ajouter les courgettes, l’oignon et l’ail. Poursuivre la cuisson 5 minutes.',
+      'Ajouter enfin les tomates, saler, poivrer et laisser compoter à feu doux et à couvert pendant 25 minutes en remuant régulièrement.',
+      'Pendant ce temps, cuire le riz dans l’eau bouillante salée et le servir en lit sous la ratatouille fondante.'
+    ]
+  },
+  {
+    id: 'salade-pates-mozza',
+    title: 'Salade de pâtes tomates & mozzarella',
+    prepTime: 20, difficulty: 'facile', category: 'vege',
+    seasons: ['ete'],
+    image: img('photo-1473093295043-cdd812d0e601'),
+    ingredients: [
+      i('pâtes', 200, 'g', 'epicerie'), i('tomates cerises', 150, 'g', 'legumes'),
+      i('mozzarella', 125, 'g', 'frais'), i('basilic', 1, 'bouquet', 'legumes'),
+      i('olives', 50, 'g', 'epicerie'),
+    ],
+    steps: [
+      'Cuire les pâtes dans l’eau bouillante salée en les gardant bien fermes. Les égoutter puis les passer sous l’eau très froide pour stopper la cuisson et les refroidir.',
+      'Couper les tomates cerises en deux et égoutter la boule de mozzarella avant de la découper en petits dés.',
+      'Dans un grand saladier, réunir les pâtes refroidies, les dés de mozzarella, les tomates cerises et les olives.',
+      'Ciseler généreusement le basilic frais sur le dessus.',
+      'Arroser d’un bon filet d’huile d’olive, saler, poivrer et mélanger délicatement avant de réserver au frais.'
+    ]
+  },
+  {
+    id: 'asperges-oeufs',
+    title: 'Asperges vertes, œufs & parmesan',
+    prepTime: 20, difficulty: 'facile', category: 'vege',
+    seasons: ['printemps'],
+    image: img('photo-1498837167922-ddd27525d352'),
+    ingredients: [
+      i('asperges vertes', 400, 'g', 'legumes'), i('œufs', 4, '', 'frais'),
+      i('parmesan', 30, 'g', 'frais'), i('citron', 1, '', 'legumes'),
+    ],
+    steps: [
+      'Casser le bout fibreux des asperges vertes. Les faire cuire dans une eau bouillante salée pendant 6 à 8 minutes (la pointe d’un couteau doit s’enfoncer facilement tout en gardant une légère tenue).',
+      'Plonger les 4 œufs dans l’eau bouillante pendant 6 minutes précises pour obtenir des œufs mollets au cœur coulant, puis les plonger aussitôt dans de l’eau très froide avant de les écaler avec précaution.',
+      'Égoutter les asperges et les disposer tièdes sur les assiettes.',
+      'Poser délicatement deux œufs mollets par assiette et les fendre légèrement au couteau.',
+      'Saupoudrer de copeaux de parmesan, assaisonner de fleur de sel, de poivre du moulin et d’un filet de jus de citron.'
+    ]
+  },
+  {
+    id: 'petits-pois-lardons',
+    title: 'Petits pois, lardons & riz',
+    prepTime: 25, difficulty: 'facile', category: 'viande',
+    seasons: ['printemps'],
+    image: img('photo-1504674900247-0877df9cc836'),
+    ingredients: [
+      i('petits pois', 300, 'g', 'legumes'), i('lardons', 150, 'g', 'viandes'),
+      i('riz', 150, 'g', 'epicerie'), i('oignon', 1, '', 'legumes'),
+    ],
+    steps: [
+      'Cuire le riz dans une casserole d’eau bouillante salée selon le temps indiqué.',
+      'Dans une sauteuse, faire dorer les lardons à sec avec l’oignon émincé pendant 5 minutes.',
+      'Ajouter les petits pois (frais ou surgelés) et mélanger.',
+      'Verser un demi-verre d’eau, couvrir et laisser mijoter à feu doux pendant 10 à 12 minutes jusqu’à ce que les petits pois soient fondants.',
+      'Égoutter le riz et le mélanger directement dans la sauteuse avec les petits pois et les lardons, rectifier le poivre et servir chaud.'
+    ]
+  },
+];
