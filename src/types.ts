@@ -1,4 +1,5 @@
 export type Difficulty = 'facile' | 'moyen' | 'avance';
+export type Season = 'printemps' | 'ete' | 'automne' | 'hiver';
 export type Aisle = 'frais' | 'legumes' | 'epicerie' | 'viandes';
 
 export interface Ingredient {
@@ -14,6 +15,7 @@ export interface Recipe {
   prepTime: number; // en minutes
   difficulty: Difficulty;
   category: 'viande' | 'poisson' | 'vege' | 'rapide';
+  seasons: Season[]; // les 4 saisons = recette valable toute l'année
   image: string;
   ingredients: Ingredient[];
 }
@@ -22,4 +24,5 @@ export interface Settings {
   excluded: string[];
   difficulties: Difficulty[];
   maxTime: number | null;
+  seasonalOnly: boolean;
 }
