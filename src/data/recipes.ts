@@ -41,30 +41,11 @@ const BASE_RECIPES: Recipe[] = [
     tip: 'Ajouter une demi-cuillère à café de sucre dans la sauce pour adoucir l’acidité des tomates.'
   },
   {
-    id: 'pates-carbonara',
-    title: 'Pâtes carbonara',
-    prepTime: 20, difficulty: 'facile', category: 'viande',
-    seasons: ALL,
-    image: img('photo-1621996346565-e3dbc646d9a9'),
-    ingredients: [
-      i('pâtes', 200, 'g', 'epicerie'), i('lardons', 150, 'g', 'viandes'),
-      i('œufs', 2, '', 'frais'), i('parmesan', 40, 'g', 'frais'),
-      i('crème fraîche', 100, 'ml', 'frais'),
-    ],
-    steps: [
-      'Lancer la cuisson des pâtes dans un grand volume d’eau bouillante bien salée.',
-      'Dans un bol, battre les 2 œufs entiers avec la crème fraîche, le parmesan râpé, une pincée de sel et du poivre moulu.',
-      'Dans une grande poêle sans matière grasse, faire dorer les lardons à feu vif pendant 5 à 6 minutes jusqu’à ce qu’ils soient croustillants. Égoutter l’excédent de graisse si besoin.',
-      'Égoutter les pâtes en gardant 2 cuillères à soupe d’eau de cuisson.',
-      'Hors du feu, verser immédiatement les pâtes chaudes et l’eau de cuisson sur les lardons, puis ajouter la préparation crème/œufs en remuant vivement pour obtenir une sauce onctueuse sans cuire les œufs.'
-    ]
-  },
-  {
     id: 'omelette-legumes',
     title: 'Omelette aux légumes',
     prepTime: 15, difficulty: 'facile', category: 'rapide',
     seasons: ['ete', 'automne'],
-    image: img('photo-1498837167922-ddd27525d352'),
+    image: 'https://www.lesfruitsetlegumesfrais.com/app/uploads/2025/09/annelysechardon-jte-omelette-hd-300dpi.jpg',
     ingredients: [
       i('œufs', 4, '', 'frais'), i('poivron', 1, '', 'legumes'),
       i('oignon', 1, '', 'legumes'), i('fromage râpé', 50, 'g', 'frais'),
