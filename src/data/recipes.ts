@@ -82,7 +82,7 @@ const BASE_RECIPES: Recipe[] = [
     title: 'Tacos au poulet',
     prepTime: 20, difficulty: 'facile', category: 'rapide',
     seasons: ALL,
-    image: https://www.savoureux.fr/api/recipe-images/8a8d2034-da1a-478e-aa9d-f9470d3e0d33/c7857ed9-763c-41f2-8216-061f9302a12f.webp ,
+    image: "https://www.savoureux.fr/api/recipe-images/8a8d2034-da1a-478e-aa9d-f9470d3e0d33/c7857ed9-763c-41f2-8216-061f9302a12f.webp" ,
     ingredients: [
       i('tortillas', 4, '', 'epicerie'), i('blanc de poulet', 250, 'g', 'viandes'),
       i('poivron', 1, '', 'legumes'), i('oignon', 1, '', 'legumes'),
