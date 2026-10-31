@@ -1,10 +1,8 @@
 import type { Aisle, Ingredient, Recipe, Season } from '../types';
-import { MEALDB_RECIPES as recipes200 } from './mealdbRecipes200';
+import { convertMealDb, type RawMeal } from '../lib/mealdb';
+import raw200 from './mealdbRecipes200.json';
 
-
-export const MEALDB_RECIPES: Recipe[] = [
-  ...recipes200,
-];
+export const MEALDB_RECIPES: Recipe[] = convertMealDb(raw200 as unknown as RawMeal[]);
 
 const i = (name: string, amount: number, unit: string, aisle: Aisle): Ingredient => ({
   name, amount, unit, aisle,
