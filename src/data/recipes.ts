@@ -1,10 +1,9 @@
 import type { Aisle, Ingredient, Recipe, Season } from '../types';
-import { MEALDB_RECIPES as recipes1to20 } from './mealdbRecipes_partiel_20';
-import { MEALDB_RECIPES_PART as recipes21to50 } from './mealdbRecipes_21_a_50';
+import { MEALDB_RECIPES as recipes200 } from './mealdbRecipes200';
+
 
 export const MEALDB_RECIPES: Recipe[] = [
-  ...recipes1to20,
-  ...recipes21to50,
+  ...recipes200,
 ];
 
 const i = (name: string, amount: number, unit: string, aisle: Aisle): Ingredient => ({
