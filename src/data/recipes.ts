@@ -1,8 +1,17 @@
 import type { Aisle, Ingredient, Recipe, Season } from '../types';
 import { convertMealDb, type RawMeal } from '../lib/mealdb';
-import raw200 from './recettes_traduites_completes_1_a_291.json';
 
-export const MEALDB_RECIPES: Recipe[] = convertMealDb(raw200 as unknown as RawMeal[]);
+// Import de vos données TheMealDB (ex: la soupe jamaïcaine ou autres)
+import rawMealDb from './recettes_traduites_completes_1_a_291.json';
+
+// Import de vos 200 recettes scrapées depuis Marmiton
+import rawMarmiton from './toutes_les_200_recettes_marmiton.json';
+
+// Conversion et fusion des deux listes dans un seul tableau de recettes
+export const MEALDB_RECIPES: Recipe[] = [
+  ...convertMealDb(rawMealDb as unknown as RawMeal[]),
+  ...convertMealDb(rawMarmiton as unknown as RawMeal[])
+];
 
 const i = (name: string, amount: number, unit: string, aisle: Aisle): Ingredient => ({
   name, amount, unit, aisle,
