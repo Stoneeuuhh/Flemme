@@ -1,4 +1,5 @@
 import type { Aisle, Recipe } from '../types';
+import { normalizeKey, translateName } from './ingredientNames';
 
 export interface ShoppingItem {
   key: string;
@@ -7,9 +8,6 @@ export interface ShoppingItem {
   unit: string;
   aisle: Aisle;
 }
-
-const normalize = (s: string) =>
-  s.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
 // Ramène les unités équivalentes à une unité de base (kg → g, l → ml...)
 function toBaseUnit(amount: number, unit: string): { amount: number; unit: string } {
@@ -22,7 +20,7 @@ function toBaseUnit(amount: number, unit: string): { amount: number; unit: strin
 }
 
 export function buildShoppingList(recipes: Recipe[]): ShoppingItem[] {
-  // 1. Regrouper par rayon + nom normalisé
+  // 1. Regrouper par rayon + nom français canonique
   const groups = new Map<
     string,
     { name: string; aisle: Aisle; lines: { amount: number; unit: string }[] }
@@ -30,10 +28,11 @@ export function buildShoppingList(recipes: Recipe[]): ShoppingItem[] {
 
   for (const recipe of recipes) {
     for (const ing of recipe.ingredients) {
-      const groupKey = `${ing.aisle}|${normalize(ing.name)}`;
+      const frName = translateName(ing.name);
+      const groupKey = `${ing.aisle}|${normalizeKey(frName)}`;
       let group = groups.get(groupKey);
       if (!group) {
-        group = { name: ing.name.trim(), aisle: ing.aisle, lines: [] };
+        group = { name: frName, aisle: ing.aisle, lines: [] };
         groups.set(groupKey, group);
       }
       group.lines.push(toBaseUnit(ing.amount, ing.unit));
