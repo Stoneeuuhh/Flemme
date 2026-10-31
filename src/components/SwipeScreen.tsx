@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Heart, PartyPopper, RotateCcw, SlidersHorizontal, X } from 'lucide-react';
+import { Heart, PartyPopper, RotateCcw, SlidersHorizontal, Undo2, X } from 'lucide-react';
 import type { Recipe } from '../types';
 import { DAYS, QUOTA } from '../lib/constants';
 import SwipeCard, { CardBody } from './SwipeCard';
@@ -16,11 +16,13 @@ interface Props {
   onResetRejected: () => void;
   onGoPlan: () => void;
   onRestart: () => void;
+  canUndo: boolean;
+  onUndo: () => void;
 }
-
 export default function SwipeScreen({
   deck, filled, targetDay, onLike, onPass,
   onOpenFilters, onCancelTarget, onResetRejected, onGoPlan, onRestart,
+  canUndo, onUndo,
 }: Props) {
   const [exitDir, setExitDir] = useState<1 | -1>(1);
   const top = deck[0];
@@ -49,6 +51,15 @@ export default function SwipeScreen({
           </div>
         </div>
         <div className="flex items-center gap-2">
+          {canUndo && (
+            <button
+              onClick={onUndo}
+              aria-label="Annuler le dernier choix"
+              className="rounded-full bg-white p-2.5 shadow"
+            >
+              <Undo2 size={16} />
+            </button>
+          )}
           {filled > 0 && (
             <button
               onClick={onRestart}
